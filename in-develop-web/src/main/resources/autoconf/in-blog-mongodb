@@ -1,5 +1,5 @@
 mongo.servers = mongodb://localhost
-mongo.dbName = pipic
+mongo.dbName = develop_boot
 
 mongo.mapPackage = com.ijson.blog.dao.entity
 mongo.connectTimeout = 5000

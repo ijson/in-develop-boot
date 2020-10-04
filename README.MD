@@ -17,3 +17,7 @@ Spring+Mongodb 快速开发框架
 -u:mongodb的用户名,没设置可不填写
 -p:mongodb的密码,没设置可不填写
 -c:目标Collection,根Json文件名称一致
+
+
+用户名:admin
+密码:123456
