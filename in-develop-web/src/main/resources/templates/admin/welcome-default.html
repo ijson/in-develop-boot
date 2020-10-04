@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="x-admin-sm">
+<head>
+    <title>欢迎页面</title>
+    <% include("base/meta.html"){} %>
+</head>
+<body>
+<% var now = date(); %>
+<div class="layui-fluid">
+    <div class="layui-row layui-col-space15">
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-body ">
+                    <blockquote class="layui-elem-quote">欢迎登录：
+                        <span class="x-red">${session.authContext.cname!}</span>！当前时间:${now,"yyyy-MM-dd HH:mm:ss"}
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <div class="layui-col-md12">
+            <div class="layui-card">
+                <div class="layui-card-header">数据统计
+                    <small>(数据每15分钟刷新一次)</small>
+                </div>
+                <div class="layui-card-body ">
+                    <ul class="layui-row layui-col-space10 layui-this x-admin-carousel x-admin-backlog">
+                        <li class="layui-col-md2 layui-col-xs6">
+                            <a href="javascript:;" class="x-admin-backlog-body">
+                                <h3>本人发布文章总数</h3>
+                                <p>
+                                    <cite>${consoleData.publishTotal}</cite></p>
+                            </a>
+                        </li>
+
+                        <li class="layui-col-md2 layui-col-xs6">
+                            <a href="javascript:;" class="x-admin-backlog-body">
+                                <h3>本人当日文章发表总数</h3>
+                                <p>
+                                    <cite>${consoleData.todayPublishTotal}</cite></p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</body>
+</html>

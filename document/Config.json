@@ -1,0 +1,2 @@
+{"_id":{"$oid":"5e29a85f6e856132fa364998"},"type":"site","siteName":"PIPIC","regRoleId":"5e2e84cb1df8f4aa18334fe0"}
+{"_id":{"$oid":"5e29b5026e856132fa364999"},"type":"switchType","openCmt":true,"openReg":true,"openQQLogin":true}
